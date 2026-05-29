@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중국 소싱 리포트 - 2025 여름</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+            background: #fafafa;
+            color: #222;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container { max-width: 980px; margin: 0 auto; }
+        header {
+            border-bottom: 2px solid #222;
+            padding-bottom: 20px;
+            margin-bottom: 36px;
+        }
+        header h1 { font-size: 1.7em; font-weight: 700; letter-spacing: -0.5px; }
+        header p { color: #666; margin-top: 4px; font-size: 0.88em; }
+        .date { color: #999; font-size: 0.78em; margin-top: 4px; }
+
+        .section {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .section-header h2 { font-size: 1.05em; font-weight: 600; }
+        .badge {
+            background: #333;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.68em;
+            font-weight: 500;
+        }
+
+        table { width: 100%; border-collapse: collapse; }
+        thead { background: #f5f5f5; }
+        th {
+            padding: 9px 10px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.75em;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            border-bottom: 1px solid #ddd;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.87em;
+        }
+        tr:hover td { background: #f9f9f9; }
+        td a { color: #222; text-decoration: none; border-bottom: 1px solid #bbb; }
+        td a:hover { border-bottom-color: #000; }
+        .price-china { color: #555; font-weight: 600; }
+        .price-korea { color: #222; font-weight: 600; }
+        .margin {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #333;
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.78em;
+        }
+
+        .links-box {
+            background: #f7f7f7;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            padding: 14px 16px;
+            margin-top: 12px;
+        }
+        .links-box h4 {
+            font-size: 0.78em;
+            color: #555;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+        .platform {
+            display: inline-block;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-size: 0.68em;
+            font-weight: 600;
+            min-width: 44px;
+            text-align: center;
+        }
+        .platform.p1688 { background: #333; color: #fff; }
+        .platform.taobao { background: #666; color: #fff; }
+        .platform.keyword { background: #e8e8e8; color: #555; }
+        .link-item a { color: #444; text-decoration: none; font-size: 0.82em; border-bottom: 1px solid #ccc; }
+        .link-item a:hover { border-bottom-color: #222; color: #000; }
+        .keyword-text {
+            font-family: 'SF Mono', Menlo, monospace;
+            background: #fff;
+            padding: 1px 6px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 0.78em;
+            color: #444;
+        }
+
+        .notice-section { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 24px; margin-bottom: 16px; }
+        .notice-section h2 { font-size: 1.05em; font-weight: 600; margin-bottom: 16px; }
+        .notice-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+        .notice-item { border-left: 3px solid #333; padding: 12px 16px; background: #f9f9f9; border-radius: 0 4px 4px 0; }
+        .notice-item h4 { font-size: 0.88em; font-weight: 600; margin-bottom: 4px; }
+        .notice-item p { font-size: 0.82em; color: #555; line-height: 1.6; }
+        .notice-item .tag { display: inline-block; background: #eee; color: #444; padding: 1px 6px; border-radius: 4px; font-size: 0.72em; font-weight: 600; margin-right: 4px; margin-top: 6px; }
+        .notice-item .warn { background: #333; color: #fff; }
+
+        .summary-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 10px;
+            margin-bottom: 28px;
+        }
+        .summary-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 14px;
+            text-align: center;
+        }
+        .summary-card .number { font-size: 1.3em; font-weight: 700; }
+        .summary-card .label { font-size: 0.72em; color: #888; margin-top: 2px; }
+
+        footer {
+            text-align: center;
+            padding: 28px 0 0;
+            color: #aaa;
+            font-size: 0.75em;
+            border-top: 1px solid #eee;
+            margin-top: 28px;
+        }
+        @media (max-width: 640px) {
+            body { padding: 16px 10px; }
+            .section { padding: 16px 12px; }
+            th, td { padding: 7px 6px; font-size: 0.8em; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>중국 소싱 리포트</h1>
+        <p>1688 & 타오바오 기반 상품 소싱 목록 · 한국 판매가 비교</p>
+        <div class="date">조사일: 2025.05.29</div>
+    </header>
+
+    <div class="summary-row">
+        <div class="summary-card"><div class="number">3+</div><div class="label">카테고리</div></div>
+        <div class="summary-card"><div class="number">30+</div><div class="label">소싱 상품</div></div>
+        <div class="summary-card"><div class="number">250~1000%</div><div class="label">예상 마진율</div></div>
+        <div class="summary-card"><div class="number">₩80~</div><div class="label">최저 도매가</div></div>
+    </div>
+
+    <!-- ========== 1. 양산 ========== -->
+    <div class="section">
+        <div class="section-header">
+            <h2>☂️ 양산 (UV차단 우양산)</h2>
+            <span class="badge">시즌 필수</span>
+        </div>
+        <table>
+            <thead><tr><th>상품명</th><th>도매가 (1688/타오바오)</th><th>한국 판매가</th><th>마진</th></tr></thead>
+            <tbody>
+                <tr><td><a href="https://m.1688.com/offer/1031088242883.html" target="_blank">5단 미니 암막 양산 (UPF50+, 블랙코팅)</a></td><td class="price-china">¥7.8~15 (₩1,600~3,100)</td><td class="price-korea">₩8,900~14,000</td><td><span class="margin">~350%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/940510414655.html" target="_blank">자동 3단 블랙코팅 우양산 (방풍)</a></td><td class="price-china">¥15~30 (₩3,100~6,200)</td><td class="price-korea">₩15,700~22,000</td><td><span class="margin">~250%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/731606436811.html" target="_blank">초경량 캡슐 양산 (200g 이하)</a></td><td class="price-china">¥9.5~20 (₩2,000~4,200)</td><td class="price-korea">₩10,000~16,000</td><td><span class="margin">~300%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/718832986618.html" target="_blank">대형 야외 파라솔 (2~3m)</a></td><td class="price-china">¥20~70 (₩4,000~14,000)</td><td class="price-korea">₩30,000~80,000</td><td><span class="margin">~300%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/950130604610.html" target="_blank">일본스타일 고급 우양산 (WPC 스타일)</a></td><td class="price-china">¥25~69 (₩5,200~14,300)</td><td class="price-korea">₩25,000~40,000</td><td><span class="margin">~200%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/640271060102.html" target="_blank">대형 이중 골프 우산 (방풍, 150cm)</a></td><td class="price-china">¥20~40 (₩4,200~8,300)</td><td class="price-korea">₩25,000~45,000</td><td><span class="margin">~350%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/899479214938.html" target="_blank">투명 POE 우산 (트렌디/사진용)</a></td><td class="price-china">¥3~8 (₩600~1,600)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~500%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/687455812318.html" target="_blank">3단 블랙코팅 미니 양산 (10본 강화골)</a></td><td class="price-china">¥10~18 (₩2,100~3,700)</td><td class="price-korea">₩12,000~18,000</td><td><span class="margin">~300%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/694085996184.html" target="_blank">컬러 그라데이션 양산 (SNS 인기)</a></td><td class="price-china">¥12~25 (₩2,500~5,200)</td><td class="price-korea">₩15,000~25,000</td><td><span class="margin">~300%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/626315289413.html" target="_blank">프리미엄 이중 방풍 장우산 (비즈니스)</a></td><td class="price-china">¥35~55 (₩7,200~11,400)</td><td class="price-korea">₩30,000~55,000</td><td><span class="margin">~280%</span></td></tr>
+            </tbody>
+        </table>
+        <div class="links-box">
+            <h4>검색어 & 추가 링크</h4>
+            <div class="link-item"><span class="platform p1688">1688</span><a href="https://www.1688.com/brand/-D5DBB5FEC9A1C6B7C5C6.html" target="_blank">접이식 양산 브랜드 모음</a></div>
+            <div class="link-item"><span class="platform taobao">타오바오</span><a href="https://www.taobao.com/list/product/%E9%81%AE%E9%98%B3%E4%BC%9E.htm" target="_blank">遮阳伞 검색</a></div>
+            <div class="link-item"><span class="platform keyword">키워드</span><span class="keyword-text">遮阳伞 黑胶 折叠 UPF50+</span></div>
+            <div class="link-item"><span class="platform keyword">키워드</span><span class="keyword-text">五折胶囊伞 2025新款</span></div>
+        </div>
+    </div>
+
+    <!-- ========== 2. 축구 ========== -->
+    <div class="section">
+        <div class="section-header">
+            <h2>⚽ 축구 관련 기념품 · 악세사리</h2>
+            <span class="badge">2026 월드컵 선점</span>
+        </div>
+        <table>
+            <thead><tr><th>상품명</th><th>도매가 (1688/타오바오)</th><th>한국 판매가</th><th>마진</th></tr></thead>
+            <tbody>
+                <tr><td><a href="https://detail.1688.com/offer/546369339994.html" target="_blank">축구 키링 (아크릴/메탈)</a></td><td class="price-china">¥2~10 (₩400~2,000)</td><td class="price-korea">₩5,000~15,000</td><td><span class="margin">~500%</span></td></tr>
+                <tr><td><a href="https://m.1688.com/offer/786868835956.html" target="_blank">월드컵 트로피 모형 키링</a></td><td class="price-china">¥3~12 (₩600~2,400)</td><td class="price-korea">₩8,000~20,000</td><td><span class="margin">~500%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/639014257314.html" target="_blank">팬 스카프/머플러 (니트/아크릴)</a></td><td class="price-china">¥6~20 (₩1,200~4,000)</td><td class="price-korea">₩18,000~32,000</td><td><span class="margin">~500%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/945270873595.html" target="_blank">구단 로고 머그컵</a></td><td class="price-china">¥5~15 (₩1,000~3,000)</td><td class="price-korea">₩10,000~20,000</td><td><span class="margin">~400%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/977370431806.html" target="_blank">선수/마스코트 피규어</a></td><td class="price-china">¥10~30 (₩2,000~6,000)</td><td class="price-korea">₩15,000~35,000</td><td><span class="margin">~400%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/40452789056.html" target="_blank">응원 깃발/타월</a></td><td class="price-china">¥3~10 (₩600~2,000)</td><td class="price-korea">₩8,000~15,000</td><td><span class="margin">~400%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/1002240839930.html" target="_blank">2026 월드컵 기념품 세트 (키링+깃발+스카프)</a></td><td class="price-china">¥7~25 (₩1,400~5,000)</td><td class="price-korea">₩20,000~50,000</td><td><span class="margin">~600%</span></td></tr>
+                <tr><td><a href="https://m.1688.com/offer/678416777609.html" target="_blank">실리콘 팬 팔찌/손목밴드 (국기 디자인)</a></td><td class="price-china">¥0.25~2 (₩50~400)</td><td class="price-korea">₩3,000~8,000</td><td><span class="margin">~2000%</span></td></tr>
+                <tr><td><a href="https://m.1688.com/offer/1027670505994.html" target="_blank">축구 선수 에나멜 뱃지/핀</a></td><td class="price-china">¥1~5 (₩200~1,000)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~800%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/693469027937.html" target="_blank">응원 나팔/부부젤라 (충기식)</a></td><td class="price-china">¥1~3 (₩200~600)</td><td class="price-korea">₩5,000~10,000</td><td><span class="margin">~1000%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/744358351010.html" target="_blank">축구 선수 기념 코인/메달</a></td><td class="price-china">¥3~8 (₩600~1,600)</td><td class="price-korea">₩8,000~18,000</td><td><span class="margin">~600%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/693469027937.html" target="_blank">국기 실리콘 팔찌 (대량 세트)</a></td><td class="price-china">¥0.3~1.5 (₩60~300)</td><td class="price-korea">₩2,000~5,000</td><td><span class="margin">~1500%</span></td></tr>
+            </tbody>
+        </table>
+        <div class="links-box">
+            <h4>검색어 & 추가 링크</h4>
+            <div class="link-item"><span class="platform p1688">1688</span><a href="https://m.1688.com/offer/1011374336966.html" target="_blank">2026 월드컵 키링 신상</a></div>
+            <div class="link-item"><span class="platform p1688">1688</span><a href="https://www.1688.com/market/-CAC0BDE7B1ADBCCDC4EEC6B7.html" target="_blank">월드컵 기념품 카테고리</a></div>
+            <div class="link-item"><span class="platform taobao">타오바오</span><a href="https://www.taobao.com/chanpin/47cfa3d7e7e3c19a5ca4cef52648070a.html" target="_blank">축구 키링 전체</a></div>
+            <div class="link-item"><span class="platform keyword">키워드</span><span class="keyword-text">2026世界杯 周边 礼品 纪念品</span></div>
+            <div class="link-item"><span class="platform keyword">키워드</span><span class="keyword-text">足球球迷手环 硅胶 定制</span></div>
+        </div>
+    </div>
+
+    <!-- ========== 3. 여름 ========== -->
+    <div class="section">
+        <div class="section-header">
+            <h2>🌞 여름 맞춤 상품</h2>
+            <span class="badge">HIGH MARGIN</span>
+        </div>
+        <table>
+            <thead><tr><th>상품명</th><th>도매가 (1688/타오바오)</th><th>한국 판매가</th><th>마진</th></tr></thead>
+            <tbody>
+                <tr><td><a href="https://detail.1688.com/offer/989709129948.html" target="_blank">넥밴드 선풍기 (USB충전, 반도체 냉각)</a></td><td class="price-china">¥20~60 (₩3,600~10,800)</td><td class="price-korea">₩17,900~46,900</td><td><span class="margin">~350%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/886742720892.html" target="_blank">핸디 미니 선풍기 (접이식, 5단)</a></td><td class="price-china">¥8~20 (₩1,400~3,600)</td><td class="price-korea">₩10,000~20,000</td><td><span class="margin">~400%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/568729924677.html" target="_blank">쿨링타월 (냉감 섬유, 속건)</a></td><td class="price-china">¥1~3 (₩180~540)</td><td class="price-korea">₩3,000~10,000</td><td><span class="margin">~1000%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/929613788487.html" target="_blank">아이스 텀블러 (진공 이중구조, 500ml)</a></td><td class="price-china">¥7~15 (₩1,200~2,700)</td><td class="price-korea">₩10,000~25,000</td><td><span class="margin">~500%</span></td></tr>
+                <tr><td><a href="https://m.1688.com/offer/879796260041.html" target="_blank">트렌디 썬글라스 (UV400)</a></td><td class="price-china">¥5~20 (₩900~3,600)</td><td class="price-korea">₩10,000~25,000</td><td><span class="margin">~400%</span></td></tr>
+                <tr><td><a href="https://m.1688.com/offer/956707029883.html" target="_blank">쿨링 스프레이 미스트 (휴대용)</a></td><td class="price-china">¥3~8 (₩540~1,400)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~500%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/900330774007.html" target="_blank">아이스 쿨슬리브 (냉감 팔토시)</a></td><td class="price-china">¥0.4~5 (₩80~1,000)</td><td class="price-korea">₩3,000~9,000</td><td><span class="margin">~1500%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/954943553531.html" target="_blank">방수 폰케이스 (수영/물놀이)</a></td><td class="price-china">¥1~5 (₩200~1,000)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~800%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/779034622646.html" target="_blank">차량용 냉감 시트 (아이스 쿨링)</a></td><td class="price-china">¥16~28 (₩3,300~5,800)</td><td class="price-korea">₩20,000~40,000</td><td><span class="margin">~400%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/886210330616.html" target="_blank">미스트 핸디 선풍기 (스프레이형)</a></td><td class="price-china">¥7~19 (₩1,400~3,900)</td><td class="price-korea">₩12,000~25,000</td><td><span class="margin">~400%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/910279872867.html" target="_blank">버킷햇/캡모자 (UV차단)</a></td><td class="price-china">¥3~10 (₩600~2,000)</td><td class="price-korea">₩10,000~20,000</td><td><span class="margin">~600%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/915216195796.html" target="_blank">대용량 보냉 텀블러 (40oz, 빨대형)</a></td><td class="price-china">¥20~30 (₩4,100~6,200)</td><td class="price-korea">₩25,000~45,000</td><td><span class="margin">~400%</span></td></tr>
+            </tbody>
+        </table>
+        <div class="links-box">
+            <h4>검색어 & 추가 링크</h4>
+            <div class="link-item"><span class="platform p1688">1688</span><a href="https://www.1688.com/chanpin/-B9D2B2B1B7E7C9C8.html" target="_blank">넥밴드/휴대용 선풍기 카테고리</a></div>
+            <div class="link-item"><span class="platform p1688">1688</span><a href="https://www.1688.com/market/-B1F9B1AD.html" target="_blank">아이스컵/텀블러 카테고리</a></div>
+            <div class="link-item"><span class="platform keyword">키워드</span><span class="keyword-text">挂脖风扇 2025新款 制冷</span></div>
+            <div class="link-item"><span class="platform keyword">키워드</span><span class="keyword-text">冰丝冰袖 防晒 夏季</span></div>
+            <div class="link-item"><span class="platform keyword">키워드</span><span class="keyword-text">手机防水袋 游泳 漂流</span></div>
+        </div>
+    </div>
+
+    <!-- ========== 4. 엑스트라 ========== -->
+    <div class="section">
+        <div class="section-header">
+            <h2>✦ 엑스트라 추천</h2>
+            <span class="badge">BONUS</span>
+        </div>
+        <table>
+            <thead><tr><th>상품명</th><th>1688 도매가</th><th>한국 판매가</th><th>추천 이유</th></tr></thead>
+            <tbody>
+                <tr><td><a href="https://detail.1688.com/offer/951982343317.html" target="_blank">쿨링 매트/방석 (펫 겸용)</a></td><td class="price-china">₩2,000~5,000</td><td class="price-korea">₩15,000~30,000</td><td>반려동물 시장 성장</td></tr>
+                <tr><td><a href="https://m.1688.com/offer/1032760871314.html" target="_blank">접이식 피크닉 매트 (방수)</a></td><td class="price-china">₩3,000~7,000</td><td class="price-korea">₩15,000~35,000</td><td>캠핑 트렌드</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/951757895370.html" target="_blank">레쉬가드/수영복</a></td><td class="price-china">₩4,000~10,000</td><td class="price-korea">₩20,000~50,000</td><td>여름 고정 수요</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/950665197970.html" target="_blank">실리콘 빨대/접이식 식기</a></td><td class="price-china">₩200~800</td><td class="price-korea">₩3,000~8,000</td><td>친환경, 초저원가</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/976698970790.html" target="_blank">휴대용 태양광 충전기</a></td><td class="price-china">₩5,000~15,000</td><td class="price-korea">₩25,000~60,000</td><td>야외/캠핑 고단가</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/675369374047.html" target="_blank">미니 캠핑 LED 랜턴 (복고풍)</a></td><td class="price-china">₩2,000~5,000</td><td class="price-korea">₩12,000~25,000</td><td>감성캠핑, SNS 인기</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/698883941701.html" target="_blank">실리콘 접이식 캠핑 식기 세트</a></td><td class="price-china">₩1,500~4,000</td><td class="price-korea">₩10,000~22,000</td><td>아웃도어 실용품</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/873869469900.html" target="_blank">경량 접이식 비치매트</a></td><td class="price-china">₩1,000~5,000</td><td class="price-korea">₩10,000~20,000</td><td>해수욕장 시즌 폭발</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/914158945594.html" target="_blank">남성 쿨슬리브 (라이딩/운전)</a></td><td class="price-china">₩100~500</td><td class="price-korea">₩4,000~9,000</td><td>초저원가 소모품</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/729681944208.html" target="_blank">태양광 복고 캠핑 무드등</a></td><td class="price-china">₩2,000~4,000</td><td class="price-korea">₩15,000~28,000</td><td>인테리어/캠핑 겸용</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ========== 인증/저작권 ========== -->
+    <div class="notice-section">
+        <div class="section-header">
+            <h2>⚠️ 인증 · 저작권 · 법률 주의사항</h2>
+        </div>
+        <div class="notice-grid">
+            <div class="notice-item">
+                <h4>KC인증 (전자제품 필수)</h4>
+                <p>선풍기·충전기·LED 랜턴 등 전기용품은 한국 수입 시 <strong>KC인증이 법적 의무</strong>입니다. 인증 없이 판매하면 제품 압류, 과태료(최대 3천만원), 형사처벌까지 가능합니다. 리튬배터리 탑재 제품은 UN38.3 운송인증도 별도 필요합니다.</p>
+                <span class="tag warn">필수</span><span class="tag">전안법 대상</span><span class="tag">리튬배터리 주의</span>
+            </div>
+            <div class="notice-item">
+                <h4>구단/FIFA 로고 저작권</h4>
+                <p>FIFA, 각 구단 엠블럼, 선수 초상권이 포함된 상품은 <strong>공식 라이선스 없이 판매 시 상표법/저작권법 위반</strong>입니다. 1688에서 무라이선스 팬굿즈를 구매해 한국에서 판매하면 권리자(FIFA, 구단)가 쿠팡/스마트스토어에 판매중지 요청 및 손해배상 청구 가능합니다. 일반 축구 모양·색상 조합만 사용한 '노브랜드' 디자인은 비교적 안전합니다.</p>
+                <span class="tag warn">고위험</span><span class="tag">상표법</span><span class="tag">초상권</span>
+            </div>
+            <div class="notice-item">
+                <h4>어린이 제품 안전인증</h4>
+                <p>14세 이하 대상 제품(키링 일부, 완구류, 물놀이용품 등)은 <strong>어린이제품 안전 특별법</strong>에 따라 안전인증/안전확인/공급자적합성 확인이 필요합니다. 인증 없이 판매하면 1년 이하 징역 또는 1천만원 이하 벌금입니다.</p>
+                <span class="tag warn">필수</span><span class="tag">어린이제품법</span>
+            </div>
+            <div class="notice-item">
+                <h4>화장품/위생용품 규제</h4>
+                <p>쿨링 미스트·선크림·알로에 젤 등은 <strong>화장품법</strong>에 따라 화장품 책임판매업 등록 + 성분 심사 + 한글 표시가 필수입니다. 미등록 수입/판매 시 3년 이하 징역입니다. 쿨링타월·썬글라스 등 비화장품은 해당 없습니다.</p>
+                <span class="tag">화장품법</span><span class="tag">책임판매업</span>
+            </div>
+            <div class="notice-item">
+                <h4>식품용 기구 (텀블러·빨대)</h4>
+                <p>식품과 접촉하는 용기·도구(텀블러, 실리콘 빨대, 식기 등)는 <strong>식품위생법</strong>상 식품용 기구 수입 신고 및 자가 품질검사가 필요합니다. 중금속·환경호르몬 검출 시 전량 폐기 및 벌금 부과됩니다.</p>
+                <span class="tag">식품위생법</span><span class="tag">수입신고</span>
+            </div>
+            <div class="notice-item">
+                <h4>디자인 도용 / 상표 침해</h4>
+                <p>한국에서 이미 등록된 디자인(특허청 디자인등록)이나 상표를 무단 사용한 제품을 판매하면 <strong>부정경쟁방지법 및 상표법</strong>에 의해 5년 이하 징역 또는 5천만원 이하 벌금입니다. 판매 전 KIPRIS(특허정보검색)에서 유사 디자인·상표 등록 여부를 반드시 확인하세요.</p>
+                <span class="tag">부정경쟁방지법</span><span class="tag">KIPRIS 확인</span>
+            </div>
+            <div class="notice-item">
+                <h4>관세 · 통관 기본</h4>
+                <p>개인 사업자 기준 물품가격(CIF) $150 초과 시 관세 + 부가세 10% 부과됩니다. 우산류 관세 8%, 섬유류 13%, 전자제품 8% 수준입니다. FTA 원산지 증명서(중국 RCEP) 활용 시 관세 절감 가능합니다. 소량 샘플은 목록통관($150 이하)으로 면세 수입 가능합니다.</p>
+                <span class="tag">관세법</span><span class="tag">RCEP</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>본 리포트는 2025년 5월 기준 조사 자료입니다. 가격은 환율·시즌·MOQ에 따라 변동됩니다.</p>
+        <p>1688.com · Taobao · 쿠팡 · 네이버 기반 리서치</p>
+    </footer>
+</div>
+</body>
+</html>
