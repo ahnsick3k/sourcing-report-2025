@@ -156,6 +156,10 @@
             border-top: 1px solid #eee;
             margin-top: 28px;
         }
+
+        table a.coupang { color: #e44; text-decoration: none; font-weight: 600; }
+        table a.coupang:hover { text-decoration: underline; }
+        th:last-child, td:last-child { text-align: center; white-space: nowrap; }
         @media (max-width: 640px) {
             body { padding: 16px 10px; }
             .section { padding: 16px 12px; }
@@ -171,13 +175,6 @@
         <div class="date">조사일: 2025.05.29</div>
     </header>
 
-    <div class="summary-row">
-        <div class="summary-card"><div class="number">3+</div><div class="label">카테고리</div></div>
-        <div class="summary-card"><div class="number">30+</div><div class="label">소싱 상품</div></div>
-        <div class="summary-card"><div class="number">250~1000%</div><div class="label">예상 마진율</div></div>
-        <div class="summary-card"><div class="number">₩80~</div><div class="label">최저 도매가</div></div>
-    </div>
-
     <!-- ========== 1. 양산 ========== -->
     <div class="section">
         <div class="section-header">
@@ -185,18 +182,18 @@
             <span class="badge">시즌 필수</span>
         </div>
         <table>
-            <thead><tr><th>상품명</th><th>도매가 (1688/타오바오)</th><th>한국 판매가</th><th>마진</th></tr></thead>
+            <thead><tr><th>상품명</th><th>도매가 (1688/타오바오)</th><th>한국 판매가</th><th>마진</th><th>한국 판매처</th></tr></thead>
             <tbody>
-                <tr><td><a href="https://m.1688.com/offer/1031088242883.html" target="_blank">5단 미니 암막 양산 (UPF50+, 블랙코팅)</a></td><td class="price-china">¥7.8~15 (₩1,600~3,100)</td><td class="price-korea">₩8,900~14,000</td><td><span class="margin">~350%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/940510414655.html" target="_blank">자동 3단 블랙코팅 우양산 (방풍)</a></td><td class="price-china">¥15~30 (₩3,100~6,200)</td><td class="price-korea">₩15,700~22,000</td><td><span class="margin">~250%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/731606436811.html" target="_blank">초경량 캡슐 양산 (200g 이하)</a></td><td class="price-china">¥9.5~20 (₩2,000~4,200)</td><td class="price-korea">₩10,000~16,000</td><td><span class="margin">~300%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/718832986618.html" target="_blank">대형 야외 파라솔 (2~3m)</a></td><td class="price-china">¥20~70 (₩4,000~14,000)</td><td class="price-korea">₩30,000~80,000</td><td><span class="margin">~300%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/950130604610.html" target="_blank">일본스타일 고급 우양산 (WPC 스타일)</a></td><td class="price-china">¥25~69 (₩5,200~14,300)</td><td class="price-korea">₩25,000~40,000</td><td><span class="margin">~200%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/640271060102.html" target="_blank">대형 이중 골프 우산 (방풍, 150cm)</a></td><td class="price-china">¥20~40 (₩4,200~8,300)</td><td class="price-korea">₩25,000~45,000</td><td><span class="margin">~350%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/899479214938.html" target="_blank">투명 POE 우산 (트렌디/사진용)</a></td><td class="price-china">¥3~8 (₩600~1,600)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~500%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/687455812318.html" target="_blank">3단 블랙코팅 미니 양산 (10본 강화골)</a></td><td class="price-china">¥10~18 (₩2,100~3,700)</td><td class="price-korea">₩12,000~18,000</td><td><span class="margin">~300%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/694085996184.html" target="_blank">컬러 그라데이션 양산 (SNS 인기)</a></td><td class="price-china">¥12~25 (₩2,500~5,200)</td><td class="price-korea">₩15,000~25,000</td><td><span class="margin">~300%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/626315289413.html" target="_blank">프리미엄 이중 방풍 장우산 (비즈니스)</a></td><td class="price-china">¥35~55 (₩7,200~11,400)</td><td class="price-korea">₩30,000~55,000</td><td><span class="margin">~280%</span></td></tr>
+                <tr><td><a href="https://m.1688.com/offer/1031088242883.html" target="_blank">5단 미니 암막 양산 (UPF50+, 블랙코팅)</a></td><td class="price-china">¥7.8~15 (₩1,600~3,100)</td><td class="price-korea">₩8,900~14,000</td><td><span class="margin">~350%</span></td><td><a href="https://www.coupang.com/vp/products/8845121722" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/940510414655.html" target="_blank">자동 3단 블랙코팅 우양산 (방풍)</a></td><td class="price-china">¥15~30 (₩3,100~6,200)</td><td class="price-korea">₩15,700~22,000</td><td><span class="margin">~250%</span></td><td><a href="https://www.coupang.com/vp/products/8645375837" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/731606436811.html" target="_blank">초경량 캡슐 양산 (200g 이하)</a></td><td class="price-china">¥9.5~20 (₩2,000~4,200)</td><td class="price-korea">₩10,000~16,000</td><td><span class="margin">~300%</span></td><td><a href="https://www.coupang.com/vp/products/8047254536" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/718832986618.html" target="_blank">대형 야외 파라솔 (2~3m)</a></td><td class="price-china">¥20~70 (₩4,000~14,000)</td><td class="price-korea">₩30,000~80,000</td><td><span class="margin">~300%</span></td><td><a href="https://www.coupang.com/vp/products/7181307812" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/950130604610.html" target="_blank">일본스타일 고급 우양산 (WPC 스타일)</a></td><td class="price-china">¥25~69 (₩5,200~14,300)</td><td class="price-korea">₩25,000~40,000</td><td><span class="margin">~200%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/640271060102.html" target="_blank">대형 이중 골프 우산 (방풍, 150cm)</a></td><td class="price-china">¥20~40 (₩4,200~8,300)</td><td class="price-korea">₩25,000~45,000</td><td><span class="margin">~350%</span></td><td><a href="https://www.coupang.com/vp/products/9452669868" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/899479214938.html" target="_blank">투명 POE 우산 (트렌디/사진용)</a></td><td class="price-china">¥3~8 (₩600~1,600)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~500%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/687455812318.html" target="_blank">3단 블랙코팅 미니 양산 (10본 강화골)</a></td><td class="price-china">¥10~18 (₩2,100~3,700)</td><td class="price-korea">₩12,000~18,000</td><td><span class="margin">~300%</span></td><td><a href="https://www.coupang.com/vp/products/8645375837" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/694085996184.html" target="_blank">컬러 그라데이션 양산 (SNS 인기)</a></td><td class="price-china">¥12~25 (₩2,500~5,200)</td><td class="price-korea">₩15,000~25,000</td><td><span class="margin">~300%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/626315289413.html" target="_blank">프리미엄 이중 방풍 장우산 (비즈니스)</a></td><td class="price-china">¥35~55 (₩7,200~11,400)</td><td class="price-korea">₩30,000~55,000</td><td><span class="margin">~280%</span></td><td><a href="https://www.coupang.com/vp/products/8687967815" target="_blank">쿠팡</a></td></tr>
             </tbody>
         </table>
         <div class="links-box">
@@ -215,20 +212,20 @@
             <span class="badge">2026 월드컵 선점</span>
         </div>
         <table>
-            <thead><tr><th>상품명</th><th>도매가 (1688/타오바오)</th><th>한국 판매가</th><th>마진</th></tr></thead>
+            <thead><tr><th>상품명</th><th>도매가 (1688/타오바오)</th><th>한국 판매가</th><th>마진</th><th>한국 판매처</th></tr></thead>
             <tbody>
-                <tr><td><a href="https://detail.1688.com/offer/546369339994.html" target="_blank">축구 키링 (아크릴/메탈)</a></td><td class="price-china">¥2~10 (₩400~2,000)</td><td class="price-korea">₩5,000~15,000</td><td><span class="margin">~500%</span></td></tr>
-                <tr><td><a href="https://m.1688.com/offer/786868835956.html" target="_blank">월드컵 트로피 모형 키링</a></td><td class="price-china">¥3~12 (₩600~2,400)</td><td class="price-korea">₩8,000~20,000</td><td><span class="margin">~500%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/639014257314.html" target="_blank">팬 스카프/머플러 (니트/아크릴)</a></td><td class="price-china">¥6~20 (₩1,200~4,000)</td><td class="price-korea">₩18,000~32,000</td><td><span class="margin">~500%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/945270873595.html" target="_blank">구단 로고 머그컵</a></td><td class="price-china">¥5~15 (₩1,000~3,000)</td><td class="price-korea">₩10,000~20,000</td><td><span class="margin">~400%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/977370431806.html" target="_blank">선수/마스코트 피규어</a></td><td class="price-china">¥10~30 (₩2,000~6,000)</td><td class="price-korea">₩15,000~35,000</td><td><span class="margin">~400%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/40452789056.html" target="_blank">응원 깃발/타월</a></td><td class="price-china">¥3~10 (₩600~2,000)</td><td class="price-korea">₩8,000~15,000</td><td><span class="margin">~400%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/1002240839930.html" target="_blank">2026 월드컵 기념품 세트 (키링+깃발+스카프)</a></td><td class="price-china">¥7~25 (₩1,400~5,000)</td><td class="price-korea">₩20,000~50,000</td><td><span class="margin">~600%</span></td></tr>
-                <tr><td><a href="https://m.1688.com/offer/678416777609.html" target="_blank">실리콘 팬 팔찌/손목밴드 (국기 디자인)</a></td><td class="price-china">¥0.25~2 (₩50~400)</td><td class="price-korea">₩3,000~8,000</td><td><span class="margin">~2000%</span></td></tr>
-                <tr><td><a href="https://m.1688.com/offer/1027670505994.html" target="_blank">축구 선수 에나멜 뱃지/핀</a></td><td class="price-china">¥1~5 (₩200~1,000)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~800%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/693469027937.html" target="_blank">응원 나팔/부부젤라 (충기식)</a></td><td class="price-china">¥1~3 (₩200~600)</td><td class="price-korea">₩5,000~10,000</td><td><span class="margin">~1000%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/744358351010.html" target="_blank">축구 선수 기념 코인/메달</a></td><td class="price-china">¥3~8 (₩600~1,600)</td><td class="price-korea">₩8,000~18,000</td><td><span class="margin">~600%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/693469027937.html" target="_blank">국기 실리콘 팔찌 (대량 세트)</a></td><td class="price-china">¥0.3~1.5 (₩60~300)</td><td class="price-korea">₩2,000~5,000</td><td><span class="margin">~1500%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/546369339994.html" target="_blank">축구 키링 (아크릴/메탈)</a></td><td class="price-china">¥2~10 (₩400~2,000)</td><td class="price-korea">₩5,000~15,000</td><td><span class="margin">~500%</span></td><td><a href="https://www.coupang.com/vp/products/9513516248" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://m.1688.com/offer/786868835956.html" target="_blank">월드컵 트로피 모형 키링</a></td><td class="price-china">¥3~12 (₩600~2,400)</td><td class="price-korea">₩8,000~20,000</td><td><span class="margin">~500%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/639014257314.html" target="_blank">팬 스카프/머플러 (니트/아크릴)</a></td><td class="price-china">¥6~20 (₩1,200~4,000)</td><td class="price-korea">₩18,000~32,000</td><td><span class="margin">~500%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/945270873595.html" target="_blank">구단 로고 머그컵</a></td><td class="price-china">¥5~15 (₩1,000~3,000)</td><td class="price-korea">₩10,000~20,000</td><td><span class="margin">~400%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/977370431806.html" target="_blank">선수/마스코트 피규어</a></td><td class="price-china">¥10~30 (₩2,000~6,000)</td><td class="price-korea">₩15,000~35,000</td><td><span class="margin">~400%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/40452789056.html" target="_blank">응원 깃발/타월</a></td><td class="price-china">¥3~10 (₩600~2,000)</td><td class="price-korea">₩8,000~15,000</td><td><span class="margin">~400%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/1002240839930.html" target="_blank">2026 월드컵 기념품 세트 (키링+깃발+스카프)</a></td><td class="price-china">¥7~25 (₩1,400~5,000)</td><td class="price-korea">₩20,000~50,000</td><td><span class="margin">~600%</span></td><td><a href="https://www.coupang.com/vp/products/9513516248" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://m.1688.com/offer/678416777609.html" target="_blank">실리콘 팬 팔찌/손목밴드 (국기 디자인)</a></td><td class="price-china">¥0.25~2 (₩50~400)</td><td class="price-korea">₩3,000~8,000</td><td><span class="margin">~2000%</span></td><td>-</td></tr>
+                <tr><td><a href="https://m.1688.com/offer/1027670505994.html" target="_blank">축구 선수 에나멜 뱃지/핀</a></td><td class="price-china">¥1~5 (₩200~1,000)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~800%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/693469027937.html" target="_blank">응원 나팔/부부젤라 (충기식)</a></td><td class="price-china">¥1~3 (₩200~600)</td><td class="price-korea">₩5,000~10,000</td><td><span class="margin">~1000%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/744358351010.html" target="_blank">축구 선수 기념 코인/메달</a></td><td class="price-china">¥3~8 (₩600~1,600)</td><td class="price-korea">₩8,000~18,000</td><td><span class="margin">~600%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/693469027937.html" target="_blank">국기 실리콘 팔찌 (대량 세트)</a></td><td class="price-china">¥0.3~1.5 (₩60~300)</td><td class="price-korea">₩2,000~5,000</td><td><span class="margin">~1500%</span></td><td>-</td></tr>
             </tbody>
         </table>
         <div class="links-box">
@@ -248,20 +245,20 @@
             <span class="badge">HIGH MARGIN</span>
         </div>
         <table>
-            <thead><tr><th>상품명</th><th>도매가 (1688/타오바오)</th><th>한국 판매가</th><th>마진</th></tr></thead>
+            <thead><tr><th>상품명</th><th>도매가 (1688/타오바오)</th><th>한국 판매가</th><th>마진</th><th>한국 판매처</th></tr></thead>
             <tbody>
-                <tr><td><a href="https://detail.1688.com/offer/989709129948.html" target="_blank">넥밴드 선풍기 (USB충전, 반도체 냉각)</a></td><td class="price-china">¥20~60 (₩3,600~10,800)</td><td class="price-korea">₩17,900~46,900</td><td><span class="margin">~350%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/886742720892.html" target="_blank">핸디 미니 선풍기 (접이식, 5단)</a></td><td class="price-china">¥8~20 (₩1,400~3,600)</td><td class="price-korea">₩10,000~20,000</td><td><span class="margin">~400%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/568729924677.html" target="_blank">쿨링타월 (냉감 섬유, 속건)</a></td><td class="price-china">¥1~3 (₩180~540)</td><td class="price-korea">₩3,000~10,000</td><td><span class="margin">~1000%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/929613788487.html" target="_blank">아이스 텀블러 (진공 이중구조, 500ml)</a></td><td class="price-china">¥7~15 (₩1,200~2,700)</td><td class="price-korea">₩10,000~25,000</td><td><span class="margin">~500%</span></td></tr>
-                <tr><td><a href="https://m.1688.com/offer/879796260041.html" target="_blank">트렌디 썬글라스 (UV400)</a></td><td class="price-china">¥5~20 (₩900~3,600)</td><td class="price-korea">₩10,000~25,000</td><td><span class="margin">~400%</span></td></tr>
-                <tr><td><a href="https://m.1688.com/offer/956707029883.html" target="_blank">쿨링 스프레이 미스트 (휴대용)</a></td><td class="price-china">¥3~8 (₩540~1,400)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~500%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/900330774007.html" target="_blank">아이스 쿨슬리브 (냉감 팔토시)</a></td><td class="price-china">¥0.4~5 (₩80~1,000)</td><td class="price-korea">₩3,000~9,000</td><td><span class="margin">~1500%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/954943553531.html" target="_blank">방수 폰케이스 (수영/물놀이)</a></td><td class="price-china">¥1~5 (₩200~1,000)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~800%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/779034622646.html" target="_blank">차량용 냉감 시트 (아이스 쿨링)</a></td><td class="price-china">¥16~28 (₩3,300~5,800)</td><td class="price-korea">₩20,000~40,000</td><td><span class="margin">~400%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/886210330616.html" target="_blank">미스트 핸디 선풍기 (스프레이형)</a></td><td class="price-china">¥7~19 (₩1,400~3,900)</td><td class="price-korea">₩12,000~25,000</td><td><span class="margin">~400%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/910279872867.html" target="_blank">버킷햇/캡모자 (UV차단)</a></td><td class="price-china">¥3~10 (₩600~2,000)</td><td class="price-korea">₩10,000~20,000</td><td><span class="margin">~600%</span></td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/915216195796.html" target="_blank">대용량 보냉 텀블러 (40oz, 빨대형)</a></td><td class="price-china">¥20~30 (₩4,100~6,200)</td><td class="price-korea">₩25,000~45,000</td><td><span class="margin">~400%</span></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/989709129948.html" target="_blank">넥밴드 선풍기 (USB충전, 반도체 냉각)</a></td><td class="price-china">¥20~60 (₩3,600~10,800)</td><td class="price-korea">₩17,900~46,900</td><td><span class="margin">~350%</span></td><td><a href="https://www.coupang.com/vp/products/8835723935" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/886742720892.html" target="_blank">핸디 미니 선풍기 (접이식, 5단)</a></td><td class="price-china">¥8~20 (₩1,400~3,600)</td><td class="price-korea">₩10,000~20,000</td><td><span class="margin">~400%</span></td><td><a href="https://www.coupang.com/vp/products/8721869552" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/568729924677.html" target="_blank">쿨링타월 (냉감 섬유, 속건)</a></td><td class="price-china">¥1~3 (₩180~540)</td><td class="price-korea">₩3,000~10,000</td><td><span class="margin">~1000%</span></td><td><a href="https://www.coupang.com/vp/products/7913733886" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/929613788487.html" target="_blank">아이스 텀블러 (진공 이중구조, 500ml)</a></td><td class="price-china">¥7~15 (₩1,200~2,700)</td><td class="price-korea">₩10,000~25,000</td><td><span class="margin">~500%</span></td><td><a href="https://www.coupang.com/vp/products/7429424027" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://m.1688.com/offer/879796260041.html" target="_blank">트렌디 썬글라스 (UV400)</a></td><td class="price-china">¥5~20 (₩900~3,600)</td><td class="price-korea">₩10,000~25,000</td><td><span class="margin">~400%</span></td><td>-</td></tr>
+                <tr><td><a href="https://m.1688.com/offer/956707029883.html" target="_blank">쿨링 스프레이 미스트 (휴대용)</a></td><td class="price-china">¥3~8 (₩540~1,400)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~500%</span></td><td><a href="https://www.coupang.com/vp/products/8052209124" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/900330774007.html" target="_blank">아이스 쿨슬리브 (냉감 팔토시)</a></td><td class="price-china">¥0.4~5 (₩80~1,000)</td><td class="price-korea">₩3,000~9,000</td><td><span class="margin">~1500%</span></td><td><a href="https://www.coupang.com/vp/products/6222267516" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/954943553531.html" target="_blank">방수 폰케이스 (수영/물놀이)</a></td><td class="price-china">¥1~5 (₩200~1,000)</td><td class="price-korea">₩5,000~12,000</td><td><span class="margin">~800%</span></td><td><a href="https://www.coupang.com/vp/products/8549672065" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/779034622646.html" target="_blank">차량용 냉감 시트 (아이스 쿨링)</a></td><td class="price-china">¥16~28 (₩3,300~5,800)</td><td class="price-korea">₩20,000~40,000</td><td><span class="margin">~400%</span></td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/886210330616.html" target="_blank">미스트 핸디 선풍기 (스프레이형)</a></td><td class="price-china">¥7~19 (₩1,400~3,900)</td><td class="price-korea">₩12,000~25,000</td><td><span class="margin">~400%</span></td><td><a href="https://www.coupang.com/vp/products/8052209124" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/910279872867.html" target="_blank">버킷햇/캡모자 (UV차단)</a></td><td class="price-china">¥3~10 (₩600~2,000)</td><td class="price-korea">₩10,000~20,000</td><td><span class="margin">~600%</span></td><td><a href="https://www.coupang.com/vp/products/9428072973" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/915216195796.html" target="_blank">대용량 보냉 텀블러 (40oz, 빨대형)</a></td><td class="price-china">¥20~30 (₩4,100~6,200)</td><td class="price-korea">₩25,000~45,000</td><td><span class="margin">~400%</span></td><td><a href="https://www.coupang.com/vp/products/8966385345" target="_blank">쿠팡</a></td></tr>
             </tbody>
         </table>
         <div class="links-box">
@@ -281,18 +278,18 @@
             <span class="badge">BONUS</span>
         </div>
         <table>
-            <thead><tr><th>상품명</th><th>1688 도매가</th><th>한국 판매가</th><th>추천 이유</th></tr></thead>
+            <thead><tr><th>상품명</th><th>1688 도매가</th><th>한국 판매가</th><th>추천 이유</th><th>한국 판매처</th></tr></thead>
             <tbody>
-                <tr><td><a href="https://detail.1688.com/offer/951982343317.html" target="_blank">쿨링 매트/방석 (펫 겸용)</a></td><td class="price-china">₩2,000~5,000</td><td class="price-korea">₩15,000~30,000</td><td>반려동물 시장 성장</td></tr>
-                <tr><td><a href="https://m.1688.com/offer/1032760871314.html" target="_blank">접이식 피크닉 매트 (방수)</a></td><td class="price-china">₩3,000~7,000</td><td class="price-korea">₩15,000~35,000</td><td>캠핑 트렌드</td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/951757895370.html" target="_blank">레쉬가드/수영복</a></td><td class="price-china">₩4,000~10,000</td><td class="price-korea">₩20,000~50,000</td><td>여름 고정 수요</td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/950665197970.html" target="_blank">실리콘 빨대/접이식 식기</a></td><td class="price-china">₩200~800</td><td class="price-korea">₩3,000~8,000</td><td>친환경, 초저원가</td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/976698970790.html" target="_blank">휴대용 태양광 충전기</a></td><td class="price-china">₩5,000~15,000</td><td class="price-korea">₩25,000~60,000</td><td>야외/캠핑 고단가</td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/675369374047.html" target="_blank">미니 캠핑 LED 랜턴 (복고풍)</a></td><td class="price-china">₩2,000~5,000</td><td class="price-korea">₩12,000~25,000</td><td>감성캠핑, SNS 인기</td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/698883941701.html" target="_blank">실리콘 접이식 캠핑 식기 세트</a></td><td class="price-china">₩1,500~4,000</td><td class="price-korea">₩10,000~22,000</td><td>아웃도어 실용품</td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/873869469900.html" target="_blank">경량 접이식 비치매트</a></td><td class="price-china">₩1,000~5,000</td><td class="price-korea">₩10,000~20,000</td><td>해수욕장 시즌 폭발</td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/914158945594.html" target="_blank">남성 쿨슬리브 (라이딩/운전)</a></td><td class="price-china">₩100~500</td><td class="price-korea">₩4,000~9,000</td><td>초저원가 소모품</td></tr>
-                <tr><td><a href="https://detail.1688.com/offer/729681944208.html" target="_blank">태양광 복고 캠핑 무드등</a></td><td class="price-china">₩2,000~4,000</td><td class="price-korea">₩15,000~28,000</td><td>인테리어/캠핑 겸용</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/951982343317.html" target="_blank">쿨링 매트/방석 (펫 겸용)</a></td><td class="price-china">₩2,000~5,000</td><td class="price-korea">₩15,000~30,000</td><td>반려동물 시장 성장</td><td>-</td></tr>
+                <tr><td><a href="https://m.1688.com/offer/1032760871314.html" target="_blank">접이식 피크닉 매트 (방수)</a></td><td class="price-china">₩3,000~7,000</td><td class="price-korea">₩15,000~35,000</td><td>캠핑 트렌드</td><td><a href="https://www.coupang.com/vp/products/9494778958" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/951757895370.html" target="_blank">레쉬가드/수영복</a></td><td class="price-china">₩4,000~10,000</td><td class="price-korea">₩20,000~50,000</td><td>여름 고정 수요</td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/950665197970.html" target="_blank">실리콘 빨대/접이식 식기</a></td><td class="price-china">₩200~800</td><td class="price-korea">₩3,000~8,000</td><td>친환경, 초저원가</td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/976698970790.html" target="_blank">휴대용 태양광 충전기</a></td><td class="price-china">₩5,000~15,000</td><td class="price-korea">₩25,000~60,000</td><td>야외/캠핑 고단가</td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/675369374047.html" target="_blank">미니 캠핑 LED 랜턴 (복고풍)</a></td><td class="price-china">₩2,000~5,000</td><td class="price-korea">₩12,000~25,000</td><td>감성캠핑, SNS 인기</td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/698883941701.html" target="_blank">실리콘 접이식 캠핑 식기 세트</a></td><td class="price-china">₩1,500~4,000</td><td class="price-korea">₩10,000~22,000</td><td>아웃도어 실용품</td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/873869469900.html" target="_blank">경량 접이식 비치매트</a></td><td class="price-china">₩1,000~5,000</td><td class="price-korea">₩10,000~20,000</td><td>해수욕장 시즌 폭발</td><td>-</td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/914158945594.html" target="_blank">남성 쿨슬리브 (라이딩/운전)</a></td><td class="price-china">₩100~500</td><td class="price-korea">₩4,000~9,000</td><td>초저원가 소모품</td><td><a href="https://www.coupang.com/vp/products/6222267516" target="_blank">쿠팡</a></td></tr>
+                <tr><td><a href="https://detail.1688.com/offer/729681944208.html" target="_blank">태양광 복고 캠핑 무드등</a></td><td class="price-china">₩2,000~4,000</td><td class="price-korea">₩15,000~28,000</td><td>인테리어/캠핑 겸용</td><td>-</td></tr>
             </tbody>
         </table>
     </div>
